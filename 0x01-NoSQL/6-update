@@ -1,3 +1,6 @@
 // Adding an Attributes to document in a collection
 
-db.school.find({name: "Holberton school"}, {$set: {address: "972 Mission street"}})
+db.school.updateMany(
+  {name: "Holberton school"},
+  {$set: {address: "972 Mission street"}}
+)
