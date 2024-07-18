@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-'''Task 9's module.
+'''
+Inserts a new document in a collection with kwargs
 '''
 
 
