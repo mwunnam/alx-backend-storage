@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
-""" MongoDB Operations with Python using pymongo """
+'''Task 9's module.
+'''
 
 
 def insert_school(mongo_collection, **kwargs):
-    """ Inserts a new document in a collection based on kwargs """
-     return mongo_collection.insert(kwargs)
+    '''Inserts a new document in a collection.
+    '''
+    result = mongo_collection.insert_one(kwargs)
+    return result.inserted_id
