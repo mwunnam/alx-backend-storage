@@ -11,8 +11,5 @@ def insert_school(mongo_collection, **kwargs):
     the data is stored in a kwargs
     Returns the id of the object of the inserted document
     """
-    if mongo_collection is None:
-        return None
-
     new_document = mongo_collection.insert_one(kwargs)
     return new_document.inserted_id
