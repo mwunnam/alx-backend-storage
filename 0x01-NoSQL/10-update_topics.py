@@ -10,7 +10,7 @@ def update_topics(mongo_collection, name, topics):
     Function changes the topics of a collection's document based
     on the name given
     """
-    result = mongo_collection.update_Many(
+    mongo_collection.update_many(
         {"name": name},
         {"$set": {"topics": topics}}
     )
