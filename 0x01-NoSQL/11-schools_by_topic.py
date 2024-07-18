@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from pymongo import MongoClient
 """
 Retuns a list of school having the specific topic
 """
