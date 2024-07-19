@@ -9,4 +9,4 @@ def schools_by_topic(mongo_collection, topic):
     Function that retuns a list  of school depending on the
     topic requested
     '''
-    return list(mongo_colloection.find({"topics": topic}))
+    return list(mongo_collection.find({"topics": topic}))
