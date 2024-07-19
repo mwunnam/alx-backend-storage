@@ -1,4 +1,4 @@
-// Adding an Attributes to document in a collection
+//Adding an Attributes to document in a collection
 
 db.school.update(
   {"name": "Holberton school"},
