@@ -1,6 +1,6 @@
 #!/urs/bin/env python3
 import redis
-import uuid
+from uuid import uuid4
 from typing import Union
 """
 Redis cache class
@@ -16,6 +16,9 @@ class Cache:
         self._redis.flushdb()
 
     def store(self, data: Union[str, bytes, int, float]) -> str:
-        key = str(uuid.uuid4())
-        sefl._redis.set(key, data)
+        """
+        Storing data in cache
+        """
+        key = str(uuid4())
+        self._redis.set(key, data)
         return key
